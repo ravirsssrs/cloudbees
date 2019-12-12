@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.cloudbees.jenkins.plugins</groupId>
+        <artifactId>jenkins-plugins</artifactId>
+        <version>62</version>
+        <relativePath />
+    </parent>
+
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>cloudbees-blueocean-default-theme</artifactId>
+    <version>0.5</version>
+    <packaging>hpi</packaging>
+
+    <properties>
+        <!-- Baseline Jenkins version you use to build the plugin. Users must have this version or newer to run. -->
+        <jenkins.version>2.73.1</jenkins.version>
+
+        <!-- Node and NPM versions. -->
+        <node.version>6.4.0</node.version>
+        <npm.version>3.10.3</npm.version>
+
+        <!-- Java Level to use. Java 7 required when using core >= 1.612 -->
+        <java.level>8</java.level>
+        <!-- Jenkins Test Harness version you use to test the plugin. -->
+        <!-- For Jenkins version >= 1.580.1 use JTH 2.x or higher. -->
+        <jenkins-test-harness.version>2.23</jenkins-test-harness.version>
+        <!-- Other properties you may want to use:
+             ~ hpi-plugin.version: The HPI Maven Plugin version used by the plugin..
+             ~ stapler-plugin.version: The Stapler Maven plugin version required by the plugin.
+        -->
+
+        <!-- stop initialize phase plugins executing twice -->
+        <javadoc.exec.goal>javadoc-no-fork</javadoc.exec.goal>
+    </properties>
+
+    <name>CloudBees Blue Ocean Default Theme</name>
+    <description>A default Blue Ocean theme for CloudBees products</description>
+    <url>https://release-notes.cloudbees.com/product/125</url>
+
+    <licenses />
+
+    <scm>
+      <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</connection>
+      <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
+      <url>https://github.com/cloudbees/${project.artifactId}-plugin</url>
+      <tag>cloudbees-blueocean-default-theme-0.5</tag>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.jenkins.blueocean</groupId>
+            <artifactId>blueocean-commons</artifactId>
+            <version>1.1.7</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jenkins-ci.tools</groupId>
+                <artifactId>maven-hpi-plugin</artifactId>
+                <configuration>
+                    <disabledTestInjection>true</disabledTestInjection>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

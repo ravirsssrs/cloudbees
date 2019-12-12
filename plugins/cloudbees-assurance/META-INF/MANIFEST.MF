@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: root
+Build-Jdk: 1.8.0_202
+Extension-Name: cloudbees-assurance
+Specification-Title: A plugin that provides support to keep CJP instan
+ ces inside the envelope
+Implementation-Title: cloudbees-assurance
+Implementation-Version: 2.138.0.10
+Group-Id: com.cloudbees.jenkins.plugins
+Short-Name: cloudbees-assurance
+Long-Name: Beekeeper Upgrade Assistant Plugin
+Url: https://release-notes.cloudbees.com/product/CloudBees+Assurance+P
+ lugin
+Plugin-Version: 2.138.0.10
+Hudson-Version: 2.176.1-cb-2
+Jenkins-Version: 2.176.1-cb-2
+Plugin-Dependencies: cloudbees-license:9.18,nectar-license:8.10,apache
+ -httpcomponents-client-4-api:4.5.5-3.0,async-http-client:1.7.24.1,cre
+ dentials:2.1.16,jackson2-api:2.8.10.1,metrics:3.1.2.10;resolution:=op
+ tional,support-core:2.44
+Plugin-Developers: 
+

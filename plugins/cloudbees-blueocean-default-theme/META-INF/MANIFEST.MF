@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: user
+Build-Jdk: 1.8.0_144
+Extension-Name: cloudbees-blueocean-default-theme
+Specification-Title: A default Blue Ocean theme for CloudBees products
+Implementation-Title: cloudbees-blueocean-default-theme
+Implementation-Version: 0.5
+Group-Id: com.cloudbees.jenkins.plugins
+Short-Name: cloudbees-blueocean-default-theme
+Long-Name: CloudBees Blue Ocean Default Theme
+Url: https://release-notes.cloudbees.com/product/125
+Plugin-Version: 0.5
+Hudson-Version: 2.73.1
+Jenkins-Version: 2.73.1
+Plugin-Dependencies: blueocean-commons:1.1.7
+Plugin-Developers: 
+

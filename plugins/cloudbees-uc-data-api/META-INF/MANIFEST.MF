@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: user
+Build-Jdk: 1.8.0_144
+Extension-Name: cloudbees-uc-data-api
+Specification-Title: This API plugin provides a library to manipulate 
+ Update Center metadata.
+Implementation-Title: cloudbees-uc-data-api
+Implementation-Version: 4.42
+Group-Id: com.cloudbees.jenkins.plugins
+Short-Name: cloudbees-uc-data-api
+Long-Name: CloudBees Update Center Data API
+Url: https://release-notes.cloudbees.com/product/131
+Plugin-Version: 4.42
+Hudson-Version: 2.46.3
+Jenkins-Version: 2.46.3
+Plugin-Dependencies: cloudbees-license:9.11,nectar-license:8.6,async-h
+ ttp-client:1.7.24.1
+Plugin-Developers: 
+Support-Dynamic-Loading: true
+

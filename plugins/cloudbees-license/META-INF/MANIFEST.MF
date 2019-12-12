@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: user
+Build-Jdk: 1.8.0_212
+Extension-Name: cloudbees-license
+Specification-Title: This plugin provides licensing services for all t
+ he CloudBees licensed plugins.
+Implementation-Title: cloudbees-license
+Implementation-Version: 9.35
+Plugin-Class: com.cloudbees.jenkins.plugins.license.PluginImpl
+Group-Id: com.cloudbees.nectar.plugins
+Short-Name: cloudbees-license
+Long-Name: CloudBees License Manager
+Url: https://release-notes.cloudbees.com/product/CloudBees+License+Man
+ ager
+Plugin-Version: 9.35
+Hudson-Version: 2.121.1-cb-1
+Jenkins-Version: 2.121.1-cb-1
+PluginFirstClassLoader: true
+Plugin-Dependencies: async-http-client:1.7.24
+Plugin-Developers: 
+Support-Dynamic-Loading: false
+Sealed: true
+

@@ -1,0 +1,107 @@
+#main-panel {
+  padding: 0 30px;
+}
+.platform-blurb {
+  padding: 0 14px !important;
+}
+.bootstrap3 .title-block {
+  padding-top: 0;
+}
+.bootstrap3 .title-block .tagline.tagline.tagline.tagline {
+  display: block;
+  margin: -4px 0;
+  padding-bottom: 10px;
+  border: 0;
+  border-bottom: 1px solid #d43f3a;
+  color: #79a;
+  font-size: 18px;
+  text-align: right;
+}
+.bootstrap3 .title-block.title-block h1 {
+  color: #444;
+}
+body .plugin-setup-wizard .welcome-panel.registration-panel {
+  padding-top: 5%;
+}
+body .plugin-setup-wizard .modal-content {
+  transition: padding-top 0.5s;
+}
+body .plugin-setup-wizard .modal-content .modal-footer {
+  transition: all 2.5s;
+  overflow: hidden;
+}
+body .plugin-setup-wizard .welcome-panel .general-error {
+  margin-top: 2em;
+}
+body .plugin-setup-wizard .modal-content.registration-state {
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 1% 0 4.8em 0;
+}
+body .plugin-setup-wizard .modal-content.registration-state .modal-body {
+  background: #fff;
+}
+.bootstrap-3 textarea.form-control {
+  height: auto;
+}
+#registration-option-buttons {
+  padding-top: 14px !important;
+}
+.licChoice .btn {
+  color: #333333;
+  font-weight: 200;
+  display: inline-block !important;
+  padding: 15px;
+  box-shadow: inset 0 -200px 200px -100px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 60, 100, 0.5);
+  text-shadow: #fff 0 1px 3px;
+  position: relative !important;
+  background: rgba(255, 255, 255, 0.75);
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  margin: 0 0 14px 0 !important;
+}
+.licChoice .btn.tile.btn .icn-box {
+  color: #fff;
+  opacity: .2;
+  bottom: 0 !important;
+}
+.licChoice .btn.tile.btn .icn-box .sub-box {
+  color: #888;
+}
+.licChoice .btn.btn-danger.btn {
+  background: #fff;
+  border-color: #d43f3a;
+  color: #d43f3a;
+  outline: none;
+  text-shadow: none;
+}
+.licChoice .btn.btn-danger.btn p {
+  color: #d43f3a;
+}
+.licChoice .btn.btn-danger.btn:hover {
+  background: #d43f3a;
+  color: #fff;
+}
+.licChoice .btn.btn-danger.btn:hover p {
+  color: #fff;
+}
+.licChoice .btn:hover,
+.licChoice .btn:active {
+  background: rgba(200, 240, 255, 0.2);
+  box-shadow: inset 0 -200px 200px -100px rgba(0, 120, 160, 0.2), 0 1px 3px rgba(0, 0, 0, 0.2);
+  color: #005078;
+}
+.licChoice .btn strong {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.licChoice .btn p {
+  font-size: 19px !important;
+  padding-right: 80px !important;
+  margin: 0 !important;
+}

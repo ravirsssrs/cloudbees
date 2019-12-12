@@ -1,0 +1,2 @@
+This file is used to record when the CloudBees optional plugins were last unpacked.
+Remove or touch this file to force the optional plugins to be refreshed.

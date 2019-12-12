@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='io.jenkins.plugins' artifactId='folder-auth' version='1.1'><l:dependency name='Folder-based Authorization Strategy' groupId='io.jenkins.plugins' artifactId='folder-auth' version='1.1' url='https://github.com/jenkinsci/folder-auth-plugin'><l:description>Manage access to Folders</l:description><l:license name='MIT License' url='https://www.opensource.org/licenses/mit-license.php'/></l:dependency></l:dependencies>

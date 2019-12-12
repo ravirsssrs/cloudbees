@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2019 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>81</version>
+    <relativePath />
+  </parent>
+
+  <artifactId>cloudbees-analytics</artifactId>
+  <version>1.3</version>
+  <packaging>hpi</packaging>
+  <name>CloudBees Analytics Plugin</name>
+  <description>
+    This plugin is used by CloudBees to gather information about product usage patterns. We solely use this information to improve our products.
+  </description>
+  <url>https://release-notes.cloudbees.com/product/150</url>
+
+  <scm>
+    <connection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cloudbees/${project.artifactId}-plugin.git</developerConnection>
+    <tag>cloudbees-analytics-1.3</tag>
+  </scm>
+
+  <properties>
+    <!-- Same as nectar license it was included -->
+    <jenkins.version>2.164.1-cb-1</jenkins.version>
+    <powermock.version>2.0.2</powermock.version>
+    <analytics.api.version>1.3</analytics.api.version>
+  </properties>
+
+  <dependencies>
+    <!-- static analysis -->
+    <dependency>
+      <groupId>com.github.spotbugs</groupId>
+      <artifactId>spotbugs-annotations</artifactId>
+    </dependency>
+
+    <!--analysis plugins-->
+    <dependency>
+      <groupId>org.kohsuke</groupId>
+      <artifactId>access-modifier-suppressions</artifactId>
+      <version>${access-modifier.version}</version>
+    </dependency>
+
+    <!-- regular dependencies -->
+    <dependency>
+      <groupId>com.cloudbees.analytics.api</groupId>
+      <artifactId>cloudbees-analytics-api</artifactId>
+      <version>${analytics.api.version}</version>
+    </dependency>
+
+    <!-- At this moment, the driver is added in the same plugin, but we can opt for adding it in other plugin -->
+    <dependency>
+      <groupId>com.cloudbees.analytics.api</groupId>
+      <artifactId>cloudbees-analytics-segment-driver</artifactId>
+      <version>${analytics.api.version}</version>
+    </dependency>
+
+    <!-- plugin dependencies -->
+
+    <!-- We gather the event User Signed Up from Nectar License -->
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+      <version>8.24</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>variant</artifactId>
+      <version>1.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>cloudbees-license</artifactId>
+      <version>9.35</version>
+    </dependency>
+
+    <!-- test dependencies -->
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest</artifactId>
+      <version>2.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.powermock</groupId>
+      <artifactId>powermock-module-junit4</artifactId>
+      <version>${powermock.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.powermock</groupId>
+      <artifactId>powermock-api-mockito2</artifactId>
+      <version>${powermock.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- To reuse test stuff defined in this project -->
+    <dependency>
+      <groupId>com.cloudbees.analytics.api</groupId>
+      <artifactId>cloudbees-analytics-api</artifactId>
+      <version>${analytics.api.version}</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+</project>

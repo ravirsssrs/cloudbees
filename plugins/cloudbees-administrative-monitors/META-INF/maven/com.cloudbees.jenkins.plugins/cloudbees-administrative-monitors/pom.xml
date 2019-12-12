@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2019 CloudBees, Inc.
+  This is proprietary code. All rights reserved
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>80</version>
+    <relativePath />
+  </parent>
+
+  <groupId>com.cloudbees.jenkins.plugins</groupId>
+  <artifactId>cloudbees-administrative-monitors</artifactId>
+  <version>1.0.1</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees Administrative Monitors Plugin</name>
+  <description>A collection of Administrative Monitors that can alert Jenkins Administrators to potential
+    issues in their Jenkins instances</description>
+  <url>https://release-notes.cloudbees.com/product/148</url>
+
+  <properties>
+    <!-- TODO update parent and then remove these -->
+    <jenkins.version>2.176.1</jenkins.version>
+    <cb.version>2.176.1.3</cb.version>
+  </properties>
+
+  <scm>
+    <connection>scm:git:ssh://git@github.com/cloudbees/cloudbees-administrative-monitors-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cloudbees/cloudbees-administrative-monitors-plugin.git</developerConnection>
+    <url>https://github.com/cloudbees/cloudbees-administrative-monitors-plugin</url>
+    <tag>cloudbees-administrative-monitors-1.0.1</tag>
+  </scm>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.cloudbees.nectar.plugins</groupId>
+        <artifactId>nectar-license</artifactId>
+        <version>8.18</version>
+      </dependency>
+      <dependency>
+        <groupId>com.cloudbees.operations-center.client</groupId>
+        <artifactId>operations-center-client</artifactId>
+        <version>2.150.2.5</version>
+      </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-annotations</artifactId>
+        <version>3.1.0</version>
+      </dependency>
+      <!-- we all hate the mess that is the upper-bounds dependency checker... -->
+      <dependency>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>async-http-client</artifactId>
+        <version>1.7.24.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jenkins-ci</groupId>
+        <artifactId>symbol-annotation</artifactId>
+        <version>1.7</version>
+      </dependency>
+      <dependency>
+        <groupId>com.cloudbees.nectar.plugins</groupId>
+        <artifactId>cloudbees-license</artifactId>
+        <version>9.32</version>
+      </dependency>
+      <!-- for hpi:run  -->
+      <dependency>
+        <groupId>org.jenkins-ci.plugins.workflow</groupId>
+        <artifactId>workflow-step-api</artifactId>
+        <version>2.15</version>
+      </dependency>
+    </dependencies>
+
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.operations-center.client</groupId>
+      <artifactId>operations-center-client</artifactId>
+      <!-- no hard dependency as this will force this plugin into CloudBees Jenkins Distribution -->
+      <optional>true</optional>
+    </dependency>
+    <!-- test scope -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <!-- static analysis -->
+    <dependency>
+      <groupId>com.github.spotbugs</groupId>
+      <artifactId>spotbugs-annotations</artifactId>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+
+</project>

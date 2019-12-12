@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-blueocean-default-theme' version='0.5'><l:dependency name='CloudBees Blue Ocean Default Theme' groupId='com.cloudbees.jenkins.plugins' artifactId='cloudbees-blueocean-default-theme' version='0.5' url='https://release-notes.cloudbees.com/product/125'><l:description>A default Blue Ocean theme for CloudBees products</l:description></l:dependency></l:dependencies>

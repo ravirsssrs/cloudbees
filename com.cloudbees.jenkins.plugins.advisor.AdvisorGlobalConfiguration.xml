@@ -1,0 +1,6 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<com.cloudbees.jenkins.plugins.advisor.AdvisorGlobalConfiguration plugin="cloudbees-jenkins-advisor@3.0">
+  <nagDisabled>false</nagDisabled>
+  <acceptToS>false</acceptToS>
+  <lastBundleResult>WARNING - 2019-12-12 09:29:41 - &lt;strong&gt;Invalid configuration&lt;/strong&gt;, the upload was skipped</lastBundleResult>
+</com.cloudbees.jenkins.plugins.advisor.AdvisorGlobalConfiguration>

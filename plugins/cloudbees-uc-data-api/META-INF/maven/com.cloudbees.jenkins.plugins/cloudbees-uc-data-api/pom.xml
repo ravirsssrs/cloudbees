@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2011 CloudBees, Inc.
+  ~ This is proprietary code. All rights reserved.
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.cloudbees.jenkins.plugins</groupId>
+    <artifactId>jenkins-plugins</artifactId>
+    <version>72</version>
+    <relativePath />
+  </parent>
+
+  <artifactId>cloudbees-uc-data-api</artifactId>
+  <version>4.42</version>
+  <packaging>hpi</packaging>
+
+  <name>CloudBees Update Center Data API</name>
+  <url>https://release-notes.cloudbees.com/product/131</url>
+  <description>
+    This API plugin provides a library to manipulate Update Center metadata.
+  </description>
+
+  <properties>
+    <cb.version>2.46.3.2</cb.version>
+    <jenkins.version>2.46.3</jenkins.version>
+    <java.level>7</java.level>
+  </properties>
+
+  <dependencies>
+    <!-- regular dependencies -->
+    <dependency>
+      <groupId>com.cloudbees.jenkins.updates</groupId>
+      <artifactId>update-center-data</artifactId>
+      <version>4.42</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.kohsuke.stapler</groupId>
+          <artifactId>json-lib</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <!-- plugin dependencies -->
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>async-http-client</artifactId>
+      <version>1.7.24.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>cloudbees-license</artifactId>
+      <version>9.11</version>
+      <exclusions>
+        <exclusion>
+          <groupId>com.cloudbees</groupId>
+          <artifactId>endpoints</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.cloudbees.nectar.plugins</groupId>
+      <artifactId>nectar-license</artifactId>
+      <version>8.6</version>
+      <exclusions>
+        <exclusion>
+          <groupId>com.cloudbees</groupId>
+          <artifactId>endpoints</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <!-- jenkins dependencies -->
+  </dependencies>
+
+  <scm>
+    <tag>cloudbees-uc-data-4.42</tag>
+  </scm>
+</project>

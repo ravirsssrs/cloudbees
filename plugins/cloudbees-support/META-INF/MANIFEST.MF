@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: root
+Build-Jdk: 1.8.0_202
+Extension-Name: cloudbees-support
+Specification-Title: This plugin allows generation of a support reques
+ t bundle that contains diagnostic information to aid
+     resolution of support requests.
+Implementation-Title: cloudbees-support
+Implementation-Version: 3.22
+Plugin-Class: com.cloudbees.jenkins.support.impl.cloudbees.PluginImpl
+Group-Id: com.cloudbees.jenkins.plugins
+Short-Name: cloudbees-support
+Long-Name: CloudBees Support Plugin
+Url: http://release-notes.cloudbees.com/product/CloudBees+Support+Plugin
+Plugin-Version: 3.22
+Hudson-Version: 2.121.1-cb-1
+Jenkins-Version: 2.121.1-cb-1
+Plugin-Dependencies: cloudbees-license:9.30,metrics:3.1.2.10,support-c
+ ore:2.43
+Plugin-Developers: 
+

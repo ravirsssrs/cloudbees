@@ -1,0 +1,11 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<sites>
+  <jenkins-enterprise plugin="nectar-license@8.24">
+    <id>cloudbees-jenkins-distribution-offline</id>
+    <url>file:/var/cache/cloudbees-jenkins-distribution/war/WEB-INF/plugins/update-center.json</url>
+  </jenkins-enterprise>
+  <jenkins-enterprise plugin="nectar-license@8.24">
+    <id>cap-cloudbees-jenkins-distribution</id>
+    <url>https://jenkins-updates.cloudbees.com/update-center/envelope-cloudbees-jenkins-distribution/update-center.json</url>
+  </jenkins-enterprise>
+</sites>
